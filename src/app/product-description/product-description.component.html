@@ -1,10 +1,10 @@
 <div class="row description">
   <div class="col-sm-2">
-    <img URL="assets/opacity-zero.jpg" alt="product image" />
+    <img src ="albumInfo?.coverImage" alt="product image" />
   </div>
   <div class="col-sm-6">
-    <p class="{{albumInfo?.album.name}}">Opacity Zero</p>
-    <p class="albumInfo">The Prependers</p>
-    <p class="albumInfo">September 25, 2014</p>
+    <p class="album-name">{{albumInfo?.album.name}}</p>
+    <p class="band-name">{{albumInfo?.artist}}</p>
+    <p class="album-release-date">{{albumInfo?.releaseDate}}</p>
   </div>
 </div>

@@ -9,19 +9,14 @@ import { ProductDescriptionComponent } from './product-description/product-descr
 import { ProductService } from './product.service';
 import { ProductTracklistingComponent } from './product-tracklisting/product-tracklisting.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import { RouterModule,Routes, RouterState } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-appRoutes:({
-  Router: [
-    path.ProductService
-    component,ProductListComponent
-
-    product/:id
-    ProductPageComponent
-  ]
-}
-
-) 
+const appRoutes: Router = [
+  {path: 'ProductService', component: 'ProductListComponent'},
+  {path: 'product/:id', component: 'ProductPageComponent'},
+  { path: '', redirectTo: 'products', pathMatch: 'full'}
+];
+    
 
 @NgModule({
   declarations: [
